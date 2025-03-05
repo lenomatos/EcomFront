@@ -19,25 +19,25 @@ const Dashboard: React.FC = () => {
       id: 1,
       name: "Product 1",
       price: 29.99,
-      image: "https://via.placeholder.com/150",
+      image: "/images/caroline-attwood-E1rH__X9SA0-unsplash.jpg",
     },
     {
       id: 2,
       name: "Product 2",
       price: 49.99,
-      image: "https://via.placeholder.com/150",
+      image: "/images/eniko-kis-KsLPTsYaqIQ-unsplash.jpg",
     },
     {
       id: 3,
       name: "Product 3",
       price: 19.99,
-      image: "https://via.placeholder.com/150",
+      image: "/images/giorgio-trovato-K62u25Jk6vo-unsplash.jpg",
     },
     {
       id: 4,
       name: "Product 4",
       price: 99.99,
-      image: "https://via.placeholder.com/150",
+      image: "/images/rachit-tank-2cFZ_FB08UM-unsplash.jpg",
     },
   ];
 
@@ -71,19 +71,20 @@ const Dashboard: React.FC = () => {
 
       {/* Side Panel */}
 
-          <div className={`side-panel ${isSidePanelOpen ? 'open' : ''}`}>
-              <div className="panel-header">
-                  <h3>Profile</h3>
-                  <button className="close-button" onClick={toggleSidePanel}>
-                      <FaTimes /> {/* Close icon */}
-                  </button>
-              </div>
-              <ul>
-                  <li>Settings</li>
-                  <li>Orders</li>
-                  <li>Logout</li>
-              </ul>
-          </div>
+      <div className={`side-panel ${isSidePanelOpen ? "open" : ""}`}>
+        <div className="panel-header">
+          <h3>Profile</h3>
+
+          <button className="close-button" onClick={toggleSidePanel}>
+            <FaTimes /> {/* Close icon */}
+          </button>
+        </div>
+        <ul>
+          <li>Settings</li>
+          <li>Orders</li>
+          <li>Logout</li>
+        </ul>
+      </div>
 
       {/* Main Content */}
       <main className="main-content">

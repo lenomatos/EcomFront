@@ -95,7 +95,6 @@
     .side-panel h3 {
         padding: 1rem;
         margin: 0;
-        border-bottom: 1px solid #ddd;
         color: #333; /* Dark text color */
         display: flex; /* Make the heading a flex container */
         align-items: center; /* Vertically center items */
